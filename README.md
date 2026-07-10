@@ -1,4 +1,3 @@
-[ignoring loop detection]
 # InvoiceX: Create. Send. Get Paid. On Stellar.
 
 <div align="center">

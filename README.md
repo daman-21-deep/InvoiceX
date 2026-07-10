@@ -17,7 +17,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org)
 [![Vite](https://img.shields.io/badge/Vite-6.x-yellow?style=for-the-badge&logo=vite)](https://vite.dev)
 [![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)](https://invoice-x-six.vercel.app/)
-[![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-green?style=for-the-badge&logo=github-actions)](https://github.com/daman-bot21/InvoiceX/actions)
+[![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-green?style=for-the-badge&logo=github-actions)](https://github.com/daman-21-deep/InvoiceX/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)](LICENSE)
 
 </div>
@@ -466,7 +466,7 @@ InvoiceX/
 ### Step-by-Step Guide
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/daman-bot21/InvoiceX.git
+   git clone https://github.com/daman-21-deep/InvoiceX.git
    cd InvoiceX
    ```
 

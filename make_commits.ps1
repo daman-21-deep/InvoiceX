@@ -3,8 +3,8 @@ Remove-Item -Recurse -Force .git -ErrorAction SilentlyContinue
 
 # Initialize git
 git init
-git config user.name "daman-bot21"
-git config user.email "daman-bot21@users.noreply.github.com"
+git config user.name "Damandeep Singh"
+git config user.email "damanpreetsingh2102@gmail.com"
 git branch -M main
 
 # Commit 1: Project init files (includes Cargo.toml with pinned workspace dep + Cargo.lock)
@@ -68,5 +68,5 @@ git add -A
 git commit -m "feat(ci): fix CI/CD pipelines, enforce locked builds, pin ed25519-dalek to 2.2.0"
 
 # Force push to main
-git remote add origin https://github.com/daman-bot21/InvoiceX.git
+git remote add origin https://github.com/daman-21-deep/InvoiceX.git
 git push -f -u origin main

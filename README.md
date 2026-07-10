@@ -35,34 +35,35 @@
 2. [Problem Statement](#-problem-statement)
 3. [Solution](#-solution)
 4. [Live Demo & Testing Guide](#-live-demo--testing-guide)
-5. [Key Features Matrix](#-key-features-matrix)
-6. [Stellar Level Compliance (1-4)](#-stellar-level-compliance-1-4)
-7. [System Architecture](#-system-architecture)
-8. [Smart Contract Architecture](#-smart-contract-architecture)
-9. [Inter-Contract Communication](#-inter-contract-communication)
-10. [Transaction Lifecycle](#-transaction-lifecycle)
-11. [Event Streaming & Feed Synchronization](#-event-streaming--feed-synchronization)
-12. [Tech Stack](#-tech-stack)
-13. [Folder Structure](#-folder-structure)
-14. [Installation & Local Setup](#-installation--local-setup)
-15. [Environment Variables](#-environment-variables)
-16. [Smart Contract Deployment](#-smart-contract-deployment)
-17. [Contract Addresses](#-contract-addresses)
-18. [Transaction Hashes](#-transaction-hashes)
-19. [Explorer Links](#-explorer-links)
-20. [Testing Suite](#-testing-suite)
-21. [CI/CD Pipelines](#-cicd-pipelines)
-22. [Security Architecture](#-security-architecture)
-23. [Responsive UI Design](#-responsive-ui-design)
-24. [User Testing & Validation](#-user-testing--validation)
-25. [Telemetry, Analytics & Monitoring](#-telemetry-analytics--monitoring)
-26. [Roadmap](#-roadmap)
-27. [Future Features](#-future-features)
-28. [Deployment](#-deployment)
-29. [Contributing Guidelines](#-contributing-guidelines)
-30. [License](#-license)
-31. [Author & Contact](#-author--contact)
-32. [Visual Screen Gallery](#-visual-screen-gallery)
+5. [Demo Video](#-demo-video)
+6. [Key Features Matrix](#-key-features-matrix)
+7. [Stellar Level Compliance (1-4)](#-stellar-level-compliance-1-4)
+8. [System Architecture](#-system-architecture)
+9. [Smart Contract Architecture](#-smart-contract-architecture)
+10. [Inter-Contract Communication](#-inter-contract-communication)
+11. [Transaction Lifecycle](#-transaction-lifecycle)
+12. [Event Streaming & Feed Synchronization](#-event-streaming--feed-synchronization)
+13. [Tech Stack](#-tech-stack)
+14. [Folder Structure](#-folder-structure)
+15. [Installation & Local Setup](#-installation--local-setup)
+16. [Environment Variables](#-environment-variables)
+17. [Smart Contract Deployment](#-smart-contract-deployment)
+18. [Contract Addresses](#-contract-addresses)
+19. [Transaction Hashes](#-transaction-hashes)
+20. [Explorer Links](#-explorer-links)
+21. [Testing Suite](#-testing-suite)
+22. [CI/CD Pipelines](#-cicd-pipelines)
+23. [Security Architecture](#-security-architecture)
+24. [Responsive UI Design](#-responsive-ui-design)
+25. [User Testing & Validation](#-user-testing--validation)
+26. [Telemetry, Analytics & Monitoring](#-telemetry-analytics--monitoring)
+27. [Roadmap](#-roadmap)
+28. [Future Features](#-future-features)
+29. [Deployment](#-deployment)
+30. [Contributing Guidelines](#-contributing-guidelines)
+31. [License](#-license)
+32. [Author & Contact](#-author--contact)
+33. [Visual Screen Gallery](#-visual-screen-gallery)
 
 ---
 
@@ -145,6 +146,15 @@ To allow judges, developers, and users to test the full lifecycle, InvoiceX feat
    * In the **Ledger** view, select your pending invoice.
    * Connect with the designated Client wallet address.
    * Click the **Settle Invoice** button and confirm the transaction signature to watch the atomic payment process execute on-chain.
+
+---
+
+## 🎥 DEMO VIDEO
+
+Watch a complete product walkthrough of the InvoiceX platform showing the dual-mode gateway (Simulator & Stellar Testnet), smart contract deployments, and escrow payment lifecycle:
+
+[![InvoiceX Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+*(Replace `YOUR_VIDEO_ID` with your recorded YouTube video link ID once uploaded)*
 
 ---
 
@@ -649,6 +659,8 @@ Designed around the **Technical Prestige** color palette (pitch-black background
 
 As required for Stellar Level 4 compliance, the application was validated under a structured user testing phase:
 
+* **User Feedback Form**: [Google Form Link](https://forms.gle/Mh9T1ZWtMYhVSJvB6)
+* **Real-time Responses & Ratings**: [Google Sheets Database](https://docs.google.com/spreadsheets/d/1GCNzKbNG0wc-m41hFRilzRKXDpCI_Bu-HvxXdjGUGss/edit?usp=sharing)
 * **Total Users Tested**: 14 Independent Developers and Freelancers.
 * **Wallet Signatures Completed**: 48 Testnet transaction signatures.
 * **Feedback Summary**:
@@ -774,4 +786,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ![User Metrics Placeholder](https://placehold.co/800x450/111111/cccccc/png?text=User+Testing+Feedback+Metrics)
 
 ### Demo Video Portal
-[![Demo Video Placeholder](https://placehold.co/800x450/111111/cccccc/png?text=InvoiceX+Walkthrough+Video)](https://youtube.com)
+*A full video walkthrough is available in the [Demo Video](#-demo-video) section of this document.

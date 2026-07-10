@@ -577,7 +577,7 @@ export async function createInvoiceContract(
           Address.fromString(creatorAddress).toScVal(),
           nativeToScVal(invoiceId),
           Address.fromString(params.clientAddress).toScVal(),
-          nativeToScVal(BigInt(Math.round(parseFloat(params.amount) * 10000000))),
+          nativeToScVal(BigInt(Math.round(parseFloat(params.amount) * 10000000)), { type: 'i128' }),
           nativeToScVal(params.title),
           nativeToScVal(params.description),
           nativeToScVal(BigInt(Math.floor(new Date(params.dueDate).getTime() / 1000))),

@@ -16,14 +16,14 @@
 [![React](https://img.shields.io/badge/React-19.0-blue?style=for-the-badge&logo=react)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org)
 [![Vite](https://img.shields.io/badge/Vite-6.x-yellow?style=for-the-badge&logo=vite)](https://vite.dev)
-[![Netlify](https://img.shields.io/badge/Deploy-Netlify-cyan?style=for-the-badge&logo=netlify)](https://invoicex1.netlify.app)
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)](https://invoice-x-six.vercel.app/)
 [![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-green?style=for-the-badge&logo=github-actions)](https://github.com/daman-bot21/InvoiceX/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)](LICENSE)
 
 </div>
 
 <div align="center" style="margin-top: 15px; margin-bottom: 30px;">
-  <a href="https://invoicex1.netlify.app" target="_blank" style="background-color: #000; color: #fff; padding: 12px 24px; font-weight: bold; border-radius: 8px; text-decoration: none; border: 2px solid #5a5a5a; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+  <a href="https://invoice-x-six.vercel.app/" target="_blank" style="background-color: #000; color: #fff; padding: 12px 24px; font-weight: bold; border-radius: 8px; text-decoration: none; border: 2px solid #5a5a5a; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
     🚀 Launch Live App
   </a>
 </div>
@@ -58,10 +58,11 @@
 25. [Telemetry, Analytics & Monitoring](#-telemetry-analytics--monitoring)
 26. [Roadmap](#-roadmap)
 27. [Future Features](#-future-features)
-28. [Contributing Guidelines](#-contributing-guidelines)
-29. [License](#-license)
-30. [Author & Contact](#-author--contact)
-31. [Visual Screen Gallery](#-visual-screen-gallery)
+28. [Deployment](#-deployment)
+29. [Contributing Guidelines](#-contributing-guidelines)
+30. [License](#-license)
+31. [Author & Contact](#-author--contact)
+32. [Visual Screen Gallery](#-visual-screen-gallery)
 
 ---
 
@@ -119,7 +120,7 @@ InvoiceX addresses the broken invoicing lifecycle by introducing a dual-contract
 
 ## 🚀 LIVE DEMO & TESTING GUIDE
 
-**Live Application URL**: [https://invoicex1.netlify.app](https://invoice-x-six.vercel.app/)
+**Live Application URL**: [https://invoice-x-six.vercel.app/](https://invoice-x-six.vercel.app/)
 
 To allow judges, developers, and users to test the full lifecycle, InvoiceX features a **dual-mode gateway**:
 
@@ -399,7 +400,7 @@ export async function syncOnChainEvents(): Promise<ContractEvent[]> {
 | | Frontend Unit Testing | Vitest, JSDOM, React Testing Library |
 | **CI/CD** | Automated Pipeline | GitHub Actions |
 | | Linter & Formatter | Oxlint, rustfmt, cargo clippy |
-| **Hosting** | Static Deployment | Netlify Single Page App configuration |
+| **Hosting** | Static Deployment | Vercel Single Page App configuration |
 | **Monitoring** | Telemetry & Errors | Sentry (v8.x), Google Analytics 4 (GA4) |
 
 ---
@@ -615,7 +616,7 @@ The repository has three active workflows inside `.github/workflows/`:
 1. **Continuous Integration (`ci.yml`)**:
    Runs on every pull request and push to main. It compiles the workspace, executes contract tests (`cargo test`), runs oxlint checks (`npm run lint`), checks TypeScript types (`npm run typecheck`), and executes Vitest frontend tests.
 2. **Production Deployment (`deploy.yml`)**:
-   Runs automatically upon successful merging. It packages and deploys the client bundles directly to production hosting (Netlify).
+   Runs automatically upon successful merging. It packages and deploys the client bundles directly to production hosting (Vercel).
 3. **Quality & Dependency Audit (`quality.yml`)**:
    Performs security checks using `npm audit`, cargo vulnerability audits via `rustsec/audit-check`, and code style scans using Cargo Clippy.
 
@@ -708,6 +709,15 @@ Tracks user behavior and application performance metrics:
 
 ---
 
+## 🚀 DEPLOYMENT
+
+The application is deployed on Vercel and is accessible at:
+* **Production URL**: [https://invoice-x-six.vercel.app/](https://invoice-x-six.vercel.app/)
+
+The codebase features automatic CI/CD deployment pipelines, ensuring that every merge to `main` is validated and deployed immediately.
+
+---
+
 ## 🤝 CONTRIBUTING GUIDELINES
 
 Please fork the repository, create a descriptive branch, implement your changes, include corresponding Vitest/Rust tests, and submit a Pull Request. Ensure that all pipelines pass.
@@ -723,7 +733,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## ✍️ AUTHOR & CONTACT
 
 * **Project Name**: InvoiceX
-* **Live Demo**: [https://invoicex1.netlify.app](https://invoicex1.netlify.app)
+* **Live Demo**: [https://invoice-x-six.vercel.app/](https://invoice-x-six.vercel.app/)
 * *Developed for the Stellar Soroban Hackathon Submission.*
 
 ---

@@ -599,10 +599,10 @@ export async function createInvoiceContract(
       }
 
       // Assemble simulated transaction (adds footprints, auth, resources etc.)
-      const assembledTx = rpc.assembleTransaction(tx, simResult);
+      const assembledTx = rpc.assembleTransaction(tx, simResult).build();
 
       // Sign with Wallet
-      const signedTxXdr = await signTxWithWallet((assembledTx as any).toXDR(), creatorAddress);
+      const signedTxXdr = await signTxWithWallet(assembledTx.toXDR(), creatorAddress);
       const finalTx = TransactionBuilder.fromXDR(signedTxXdr, Networks.TESTNET);
 
       // Submit
@@ -762,10 +762,10 @@ export async function payInvoiceContract(
         throw new Error(`Simulation failed: ${simResult.error}`);
       }
 
-      const assembledTx = rpc.assembleTransaction(tx, simResult);
+      const assembledTx = rpc.assembleTransaction(tx, simResult).build();
 
       // Sign with Wallet
-      const signedTxXdr = await signTxWithWallet((assembledTx as any).toXDR(), payerAddress);
+      const signedTxXdr = await signTxWithWallet(assembledTx.toXDR(), payerAddress);
       const finalTx = TransactionBuilder.fromXDR(signedTxXdr, Networks.TESTNET);
 
       // Submit
@@ -897,10 +897,10 @@ export async function cancelInvoiceContract(
         throw new Error(`Simulation failed: ${simResult.error}`);
       }
 
-      const assembledTx = rpc.assembleTransaction(tx, simResult);
+      const assembledTx = rpc.assembleTransaction(tx, simResult).build();
 
       // Sign with Wallet
-      const signedTxXdr = await signTxWithWallet((assembledTx as any).toXDR(), creatorAddress);
+      const signedTxXdr = await signTxWithWallet(assembledTx.toXDR(), creatorAddress);
       const finalTx = TransactionBuilder.fromXDR(signedTxXdr, Networks.TESTNET);
 
       // Submit
